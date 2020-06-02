@@ -27,11 +27,7 @@ not already exist. We recommend you also include ```DROP TABLE``` statement for 
 run drop and create tables whenever you want to reset your database and test your ETL pipeline
 - Test by running the proper select statements with the correct ```WHERE``` clause
 
-## Build ETL Pipeline
-- Implement the logic in section Part I of the notebook template to iterate through each event file in event_data
- to process and create a new CSV file in Python
-- Make necessary edits to Part II of the notebook template to include Apache Cassandra ```CREATE``` and
- ```INSERT``` statements to load processed records into relevant tables in your data model
+## Test run
 - Test by running ```SELECT``` statements after running the queries on your database like below:
 	```SQL
 	result_3 = session.execute("""SELECT listener_firstname, listener_lastname FROM
@@ -40,6 +36,6 @@ run drop and create tables whenever you want to reset your database and test you
 	for row in result_3:
 	    print (row.listener_firstname, row.listener_lastname)
 	```
-	Jacqueline Lynch 
-	Tegan Levine 
-	Sara Johnson
+- Jacqueline Lynch 
+- Tegan Levine 
+- Sara Johnson
